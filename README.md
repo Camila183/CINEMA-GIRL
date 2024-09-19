@@ -13,6 +13,7 @@ a películas y a la información relacionada.
 - Sección “Contáctanos”: Los usuarios puede comunicarse directamente por el Canal de Whatsapp, Instagram y GitHub para contactarnos directamente
 
 🌼Estructura del Proyecto
+
 Index.html: Página principal, breve introducción y muestra de patrocinio por parte de OMDb API.
 - Buscador.html: Página para la búsqueda de la película, mediante su nombre o palabra clave de la película a buscar.
 - Nosotras.html: Pagina que describe el rol de cada integrante y finalidad breve de la web.
@@ -20,13 +21,18 @@ Index.html: Página principal, breve introducción y muestra de patrocinio por p
 - Contacto.html: Página con enlaces a redes sociales y medios de contacto por soporte o ayuda.
 
 🌻Carpetas
+
 Assets: Contiene todas las carpetas usadas sobre el correcto funcionamiento de la pagina
+
 ✓ IMG: Contiene las imágenes utilizadas o fondos.
+
 ✓ STYLE: Archivos CSS para estilizar el sitio web y darle diseño.
+
 ✓ JS: Scripts que complementan la funcionalidad de la página, como el de 
 búsqueda, navegación y manejo correcto del API.
 
 🧸USO CORRECTO 
+
 1. En la página principal, haz clic en “Comenzar”, para ir a la página de búsqueda.
 2. Ingresa el titulo o parte del título de la película y presiona “Buscar”.
 3. No te olvides que dispones de la barra de menú, para navegar a las distintas secciones:
