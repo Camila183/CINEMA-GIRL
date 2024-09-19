@@ -6,7 +6,7 @@ $(document).ready(function() {
     if (categoria) {
         $('#titulo-categoria').text(`Películas de ${categoria.replace('+', ' ')}`); 
 
-        const apikey = 'efb82061'; 
+        const apikey = '906b5c9d'; 
         const query = encodeURIComponent(categoria); 
         const apiUrl = `https://www.omdbapi.com/?apikey=${apikey}&s=${query}`;
 

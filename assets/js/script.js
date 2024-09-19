@@ -1,6 +1,6 @@
 function generateUrl() {
     let id = Math.floor(Math.random() * 9000000) + 1000000;
-    return `https://www.omdbapi.com/?i=tt${id}&apikey=efb82061&type=movie`;
+    return `https://www.omdbapi.com/?i=tt${id}&apikey=906b5c9d&type=movie`;
 }
 
 
@@ -61,7 +61,7 @@ function mostrarDatos(info) {
 
 
 
-const apikey = 'efb82061'; 
+const apikey = '906b5c9d'; 
 
 $(document).ready(function(){
     $("#search-form").submit(function (e) {
