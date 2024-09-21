@@ -95,37 +95,69 @@ $(document).ready(function(){
     function renderMovie(data) {
         // Crear una nueva estructura HTML
         const newHtml = `
-            <header>
-                
-                <nav>
-            <img src="CINEMA_1-removebg-preview.png" alt="cinema" class="cinema">
-            <ul class="menu-horizontal">
-              <li><a href="index.html">Inicio</a></li>
+           <header>
+      <nav>
+        <img src="assets/img/CINEMA.png" alt="cinema" class="cinema" />
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li>
+            <a href="#">Categorías</a>
+            <ul>
               <li>
-                <a href="#">Catálogo</a>
-                <ul>
-                  <li><a href="categorias.html?categoria=harry+potter">Harry Potter</a></li>
-                  <li><a href="categorias.html?categoria=barbie">Barbie</a></li>
-                  <li><a href="categorias.html?categoria=spider+man">Spiderman</a></li>
-                  <li><a href="categorias.html?categoria=monster+high">Monster High</a></li>
-                  <li><a href="categorias.html?categoria=star+wars">Star Wars</a></li>
-                  <li><a href="categorias.html?categoria=lord+of+the+rings">The Lord of the Rings</a></li>
-                  <li><a href="categorias.html?categoria=x+men">X-Men</a></li>
-                  
-              </ul>
-      
+                <a href="categorias.html?categoria=harry+potter"
+                  >Harry Potter</a
+                >
               </li>
-              <li><a href="#">Acerca de nosotras</a></li>
-              <li><a href="#">Contactanos</a></li>
+              <li><a href="categorias.html?categoria=barbie">Barbie</a></li>
+              <li>
+                <a href="categorias.html?categoria=spider+man">Spiderman</a>
+              </li>
+              <li>
+                <a href="categorias.html?categoria=monster+high"
+                  >Monster High</a
+                >
+              </li>
+              <li>
+                <a href="categorias.html?categoria=star+wars">Star Wars</a>
+              </li>
+              <li>
+                <a href="categorias.html?categoria=lord+of+the+rings"
+                  >The Lord of the Rings</a
+                >
+              </li>
+              <li><a href="categorias.html?categoria=x+men">X-Men</a></li>
             </ul>
-        </nav>
-        <h1>Resultados de la búsqueda</h1>
+          </li>
+          <li><a href="nosotras.html">Nosotras</a></li>
+          <li><a href="contacto.html">Contáctanos</a></li>
+        </ul>
+      </nav>
+    </header>
+      <main>
+     
+
+        <!-- Contenedor donde se mostrarán los resultados de búsqueda -->
+        <!-- Filtros -->
+        <h1 id="result-header">Resultados de la búsqueda</h1>
+        <div id="filtros">
+          <label for="ordenar">Ordenar por:</label>
+          <select id="ordenar">
+            <option value="titulo">Título (A-Z)</option>
+            <option value="titulo-desc">Título (Z-A)</option>
+            <option value="anio-asc">Año (Ascendente)</option>
+            <option value="anio-desc">Año (Descendente)</option>
+          </select>
+
+          <label for="filtroAnio">Mostrar películas después del año:</label>
+          <input type="number" id="filtroAnio" placeholder="Ingrese un año" />
+
+          <button id="aplicarFiltros">Aplicar Filtros</button>
+        </div>
+
+        <div id="movies-container" class="movies-grid"></div>
+        
     
-            </header>
-            <main id="movies-container"></main>
-            <footer>
-                <p>API proporcionada por <a href="https://www.omdbapi.com/" target="_blank">OMDb API</a></p>
-            </footer>
+    </main>
         `;
         
         // Añadir la nueva estructura HTML al body
